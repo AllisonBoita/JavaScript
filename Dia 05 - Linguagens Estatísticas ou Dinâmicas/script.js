@@ -44,9 +44,15 @@ console.log(age, typeof age)
 
 // Number para String
 
-let age = 35
+let age = 0
 console.log(age, typeof age)
 
 // age = age.toString()
 // age = String(age)
 
+// Number para Boolean (true ou False)
+
+// Number 0 = false
+// Number 1 ou acima = true
+
+// age = Boolean(age)
