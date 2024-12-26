@@ -40,3 +40,13 @@ console.log(age, typeof age) */
 age = Number(age)
 console.log(age, typeof age)
  */
+
+
+// Number para String
+
+let age = 35
+console.log(age, typeof age)
+
+// age = age.toString()
+// age = String(age)
+
