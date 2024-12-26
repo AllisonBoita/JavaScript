@@ -1,0 +1,22 @@
+site_name: "Meu Projeto de Documentação"
+theme:
+  name: 'material'  # Usando o tema Material for MkDocs
+  logo: 'images/logo.png'  # Se quiser adicionar um logo (opcional)
+  favicon: 'images/favicon.ico'  # Se quiser adicionar um favicon (opcional)
+  features:
+    - navigation.expand  # Para expandir automaticamente as seções no menu lateral
+
+# Definindo a navegação lateral
+nav:
+  - Início: index.md  # Página inicial (crie o index.md para a introdução)
+  - Dias:
+      - "Dia 01": Dia01.md
+      - "Dia 02": Dia02.md
+      - "Dia 03": Dia03.md
+      - "Dia 05": Dia05.md
+      - "Dia 06": Dia06.md
+
+# Configurações adicionais (exemplo)
+markdown_extensions:
+  - toc:
+      permalink: true  # Permite links permanentes para os itens do TOC (Tabela de 
