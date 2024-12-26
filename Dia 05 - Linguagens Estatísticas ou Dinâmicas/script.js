@@ -44,8 +44,8 @@ console.log(age, typeof age)
 
 // Number para String
 
-let age = 0
-console.log(age, typeof age)
+/* let age = 0
+console.log(age, typeof age) */
 
 // age = age.toString()
 // age = String(age)
