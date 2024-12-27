@@ -32,11 +32,20 @@ console.log(num1.toString(3)) // Posso transformar em string e passar uma base p
 
 // Metodos Matematicos (Math)
 
-let num1 = 16
+/* let num1 = 16
 console.log(Math.round(num1)) // Transforma o número fracionário em inteiro
 console.log(Math.ceil(num1)) // Com o ceil ele sempre arredonda pra cima.
 console.log(Math.floor(num1)) // Com o floor ele sempre arredonda pra baixo.
 console.log(Math.sqrt(num1)) // Raiz quadrada
 console.log(Math.pow(num1, 3)) // Calculo de potencia
 console.log(Math.abs(num1, 3)) // Valor absoluto
-console.log(Math.round(Math.random() * 10 + 1)) // Gerando numero randomico
+console.log(Math.round(Math.random() * 10 + 1)) // Gerando numero randomico */
+
+// Objetos (Para Multiplos Valores)
+
+let car = {
+    carName: 'Cybertruck',
+    carRange: 340,
+    carMaxSpeed: 112,
+    carHorsePower: 600
+}
