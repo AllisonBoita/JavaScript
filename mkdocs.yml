@@ -15,7 +15,8 @@ nav:
       - "Dia 03": Dia03.md
       - "Dia 05": Dia05.md
       - "Dia 06": Dia06.md
-      - "Dia 07": Dia07.md      
+      - "Dia 07": Dia07.md
+      - "Dia 08": Dia08.md                
 
 # Configurações adicionais (exemplo)
 markdown_extensions:
