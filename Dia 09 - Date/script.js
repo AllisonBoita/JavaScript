@@ -27,3 +27,11 @@ data.setMonth(2)
 console.log(data.getMonth())
 
 // Para capturar utilizamos o GET. para configurar utilizamos o SET.
+
+// Criar um contador de dias para uma data específica. Inicio e Fim. Quero saber a diferença de dias.
+
+let dataInicio = new Date ('2022/12/25')
+let dataFim = new Date ('2024/12/31')
+
+let diferencaDias = (dataFim - dataInicio) / (1000 * 3600 * 24) // Milisegundos, Minutos e horas
+console.log(diferencaDias) // Valor em milisegundos
