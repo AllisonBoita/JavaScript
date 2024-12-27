@@ -35,3 +35,9 @@ let dataFim = new Date ('2024/12/31')
 
 let diferencaDias = (dataFim - dataInicio) / (1000 * 3600 * 24) // Milisegundos, Minutos e horas
 console.log(diferencaDias) // Valor em milisegundos
+
+// Data e Hora (Idioma)
+
+let dataFormatada
+dataFormatada = Intl.DateTimeFormat('pt-BR').format(dataFormatada)
+console.log(dataFormatada)
