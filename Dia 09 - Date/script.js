@@ -12,8 +12,18 @@ console.log(dataString)
 // Os metodos do Date
 
 let data = new Date()
-console.log(data.getDate()) // Pegar dia do mês
+/* console.log(data.getDate()) // Pegar dia do mês
 console.log(data.getDay()) // Dia da semana (0 é domingo) 
 console.log(data.getMonth()) // Mês (Janeiro inicia em 0)
 console.log(data.getFullYear()) // Ano
-console.log(data.getHours()) // Horas
+console.log(data.getHours()) // Horas */
+
+// Configurando os métodos do Date
+
+data.setDate(25) // Atribuindo nova data
+console.log(data.getDate())
+
+data.setMonth(2)
+console.log(data.getMonth())
+
+// Para capturar utilizamos o GET. para configurar utilizamos o SET.
