@@ -23,3 +23,8 @@ if (hour <= 12) {
 } */
 
 // Variação de formato de IF e ELSE
+// Shorthand IF
+
+if (condicao) console.log('teste')
+else if (condicao) console.log('teste')
+else console.log('boa noite')
