@@ -1,15 +1,41 @@
-/*
-Se a pontuação for 90 ou mais será exibido "Excelente!"
-Se for 75 ou mais (mas menos que 90) sera "Muito bom!"
-Para pontuações menores "Você pode melhorar"
-*/
+// Criar sistema de autenticação que valida condições antes de permitir acesso.
 
-let pontuacao = 1
+let usuarioValido = true
+let senhaCorreta = true
+let temPermissao = true
 
-if (pontuacao >= 90) {
-  console.log('Excelente!')
-} else if (pontuacao >= 75) {
-  console.log('Muito bom')
+// Todas boolean
+
+// Mensagens:
+// Acesso Permitido!
+// Acesso negado. Usuario sem permissao
+// Senha incorreta. Tente novamente
+// Usuario não encontrado
+
+/* if (usuarioValido && senhaCorreta && temPermissao) {
+  console.log('Acesso permitido')
+} else if (usuarioValido && senhaCorreta && temPermissao === false) {
+  console.log('Acesso negado. Usuario sem permissão')
+} else if (usuarioValido && senhaCorreta === false && temPermissao) {
+  console.log('Senha incorreta. Tente novamente')
+} else if (usuarioValido === false && senhaCorreta && temPermissao) {
+  console.log('Usuario não encontrado')
 } else {
-  console.log('Você pode melhorar')
+  console.log('desista')
+}
+ */
+// OU
+
+if (usuarioValido) {
+  if (senhaCorreta) {
+    if (temPermissao) {
+      console.log('Acesso Permitido')
+    } else {
+      console.log('Acesso negado. Usuario sem permissão')
+    }
+  } else {
+    console.log('Senha incorreta. Tente novamente')
+  }
+} else {
+  console.log('Usuario não encontrado')
 }
