@@ -31,3 +31,9 @@ console.log(cart)
 y = cart[4][1] // o primeiro é o index. como tenho 4 itens e inicia de 0, o 4 não é usado. chamo ela e na sequencia a posição
 // do segundo array
 console.log(y)
+
+
+/* let frutas = ['Maçã', 'Banana', 'Laranja', 'Uva'];
+frutas.splice(1, 1); // Remove o item na posição 1 (Banana)
+console.log(frutas); // Saída: ['Maçã', 'Laranja', 'Uva']
+ */

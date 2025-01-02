@@ -23,3 +23,7 @@ Neste exemplo, slice é usado dentro de splice para multiplicar o segundo elemen
 
 Importância:
 Entender esses métodos e técnicas nos permite trabalhar com arrays de maneira mais eficaz e eficiente. Arrays são estruturas de dados fundamentais em JavaScript, e a habilidade de manipulá-los adequadamente é crucial para o desenvolvimento de lógicas complexas e a gestão de dados coletados ou gerados durante a execução de programas. A combinação e o uso adequado desses métodos abrem um vasto leque de possibilidades para a manipulação de dados em JavaScript.
+
+let frutas = ['Maçã', 'Banana', 'Laranja', 'Uva'];
+frutas.splice(1, 1); // Remove o item na posição 1 (Banana)
+console.log(frutas); // Saída: ['Maçã', 'Laranja', 'Uva']
