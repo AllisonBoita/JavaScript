@@ -1,8 +1,19 @@
-// Crie uma solução que verifica se o usuário escolheu "azul". caso seja outra cor utilize o not para retornar:
-// "Não temos essa cor"
+// Criar solução com Switch que retorne:
+// hora < 12
+// hora < 18
+// hora >= 18
+// A hora deve ser coletada do sistema local
 
-let escolhaCor = 'Amarelo'
+let horaDia = new Date()
+let horaAtual = horaDia.getHours()
 
-if (!(escolhaCor == 'Azul')) {
-  console.log('Não temos essa cor')
+switch (true) {
+  case horaAtual < 12:
+    console.log('Bom dia')
+    break
+  case horaAtual < 18:
+    console.log('Boa tarde')
+    break
+  default:
+    console.log('Boa noite')
 }
