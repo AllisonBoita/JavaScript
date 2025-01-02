@@ -35,3 +35,24 @@ switch (
 
 // Comparação: Switch e CASE
 // Verificação: IF e ELSE
+
+// Nivel de usuario no Sistema
+
+let userLevel = 'admin'
+
+// admin, guest or editor
+
+switch (userLevel) {
+  case 'admin':
+    console.log('Full Access')
+    break
+  case 'guest':
+    console.log('Guest Level')
+    break
+  case 'editor':
+    console.log('Editor Level')
+    break
+
+  default:
+    console.log('Sem acesso')
+}
