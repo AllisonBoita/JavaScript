@@ -31,7 +31,6 @@ if (texto) { // A condição só pode ser true or false.
 
 // ----
 
-let idade = 12
 
 /* if (idade < 18){
   console.log('Menor de idade')
@@ -48,5 +47,7 @@ console.log(resultado) */
 // ----
 
 // Operador Ternário com Console.
+
+let idade = 12
 
 idade < 18 ? console.log('Menor de idade') : console.log('Maior de idade')
