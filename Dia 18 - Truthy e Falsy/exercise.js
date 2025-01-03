@@ -1,19 +1,33 @@
-// Criar solução com Switch que retorne:
-// hora < 12
-// hora < 18
-// hora >= 18
-// A hora deve ser coletada do sistema local
+// Desafio Operador Ternário
 
-let horaDia = new Date()
-let horaAtual = horaDia.getHours()
-
-switch (true) {
-  case horaAtual < 12:
-    console.log('Bom dia')
-    break
-  case horaAtual < 18:
-    console.log('Boa tarde')
-    break
-  default:
-    console.log('Boa noite')
+/* let nota = 54
+let avaliacao
+ */
+/* if (nota>= 90){
+  avaliacao = 'Excelente'
+} else if (nota >= 70){
+  avaliacao = 'Bom'
+} else if (nota >= 50) {
+  avaliacao = 'Satisfatório'
+} else {
+  avaliacao = 'Insatisfatório'
 }
+
+console.log(avaliacao)
+*/
+
+// condicao ? valor_se_verdadeiro : valor_se_falso;
+
+let nota =  30
+
+let avaliacao =
+  nota >= 90 ? 'Excelente' :
+    nota >= 70 ? 'Bom' :
+      nota >= 50 ? 'Satisfatório' :
+        'Insatisfatório';
+
+console.log(avaliacao); // Resultado: Excelente
+
+/* let resultado = idade < 18 ? 'Menor de idade' : 'Maior de idade'
+console.log(resultado)
+*/
