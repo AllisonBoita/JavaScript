@@ -28,3 +28,37 @@ function subtrair(num1, num2) {
 subtrair(10, 5)
 
 // Toda vez que utilizo o RETURN ele deve ser a última linha. Nada abaixo dele é executado.
+
+// ---
+
+// Parametros Padrão
+
+function calcularTotal(preco, desconto){ // Ou setar o valor do parâmetro aqui
+  let valorDesconto = preco * desconto
+  let totalCompra = preco - valorDesconto
+  return totalCompra
+}
+
+console.log(calcularTotal(100, 0.1)) // Posso definir o valor do parâmetro aqui
+
+// -----
+
+function calcularTotal(preco, desconto = 0.2) { // Ou setar o valor do parâmetro aqui
+  let valorDesconto = preco * desconto
+  let totalCompra = preco - valorDesconto
+  return totalCompra
+}
+
+console.log(calcularTotal(100)) // Posso definir o valor do parâmetro aqui
+
+
+// -------------------
+
+// Parametros Rest
+
+function listaCompras(...itens){ // Não sei a quantidade de parâmetros que vou passar
+  console.log(itens)
+  console.log('Itens da minha lista: ' + itens)
+}
+
+listaCompras('Pao', 'Carne', 'Arroz', 'Laranja')
