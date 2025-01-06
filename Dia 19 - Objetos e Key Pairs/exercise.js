@@ -1,33 +1,18 @@
-// Desafio Operador Ternário
+// Objetos, Nested e Arrays
 
-/* let nota = 54
-let avaliacao
- */
-/* if (nota>= 90){
-  avaliacao = 'Excelente'
-} else if (nota >= 70){
-  avaliacao = 'Bom'
-} else if (nota >= 50) {
-  avaliacao = 'Satisfatório'
-} else {
-  avaliacao = 'Insatisfatório'
+const biblioteca = {
+  fantasia: [
+    {anoPublicacao: 1954, autor: 'J.R.R Tolkien', titulo: 'O senhor dos anéis'},
+    {anoPublicacao: 1997, autor: 'J.K Rowling', titulo: 'Harry Potter'}
+  ],
+  ficcaoCientifica: [
+    {anoPublicacao: 1965, autor: 'Frank Herbert', titulo: 'Duna'},
+    {anoPublicacao: 1951, autor: 'Isaac Asimov', titulo: 'Fundação'}
+  ]
 }
 
-console.log(avaliacao)
-*/
+console.log(biblioteca);
 
-// condicao ? valor_se_verdadeiro : valor_se_falso;
-
-let nota =  30
-
-let avaliacao =
-  nota >= 90 ? 'Excelente' :
-    nota >= 70 ? 'Bom' :
-      nota >= 50 ? 'Satisfatório' :
-        'Insatisfatório';
-
-console.log(avaliacao); // Resultado: Excelente
-
-/* let resultado = idade < 18 ? 'Menor de idade' : 'Maior de idade'
-console.log(resultado)
-*/
+// Biblioteca é o objeto principal
+// Dentro tenho Fantasia e FiccaoCientifica que são as arrays.
+// Dentro delas, tenho dois objetos em cada.
