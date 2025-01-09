@@ -7,3 +7,4 @@ Aqui está um exemplo de como usar o MkDocs para gerar e visualizar documentaç�
 1. Instale o MkDocs
 2. Crie seu conteúdo em arquivos Markdown
 3. Use o servidor local para visualizar a documentação
+4. Teste
