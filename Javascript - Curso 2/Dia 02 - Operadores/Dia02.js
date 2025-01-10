@@ -22,3 +22,10 @@ let num4 = 1
 
 console.log(num3 === num4) // Strict (Tipo e Valor)
 console.log(num3 == num4) // Lose (Apenas valor)
+
+/// Operadores ternários
+
+let driver = 90
+let speed = driver > 10 ? 'Above' : 'Below'
+
+console.log(speed)
