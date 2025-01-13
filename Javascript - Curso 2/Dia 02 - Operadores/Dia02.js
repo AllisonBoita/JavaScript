@@ -103,6 +103,8 @@ do {
 
 // For In Loop
 
+// Analisa informações e valores dentro de um objeto.
+
 const myCar = {
     model: 'BMW',
     year: 2005,
@@ -111,3 +113,14 @@ const myCar = {
 
 for (let i in myCar)
     console.log(i, myCar[i])
+
+// O i é a variável. Quando eu peço pra pegar o my car ele passa o que está dentro da informação.
+
+// For Of Loop
+
+// Em arrays usamos o of.
+
+const friends = ['Ana', 'Marcos', 'Jose']
+
+for (let i of friends)
+    console.log(i)
