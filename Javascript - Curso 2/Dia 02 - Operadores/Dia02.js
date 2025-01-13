@@ -67,3 +67,11 @@ if (velMax >= 110){
 } else {
     console.log('Muito abaixo')
 }
+
+// For Loop
+
+// For (Var, Condição, Incremento)
+
+for (i = 1; i <= 10; i++){
+    console.log('Numero ', i)
+}
