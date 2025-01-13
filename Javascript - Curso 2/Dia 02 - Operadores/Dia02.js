@@ -88,3 +88,15 @@ while (j <= 10){
 // A vantagem dele é que posso utilizar variaveis setadas anteriormente no programa.
 
 // Do While
+
+// Diferenças:
+// - Condição fica abaixo. 
+// - O Do While executa pra depois verificar.
+
+k = 1
+
+do {
+    console.log('Numero ', k)
+    k++
+} while(k <= 10)
+
