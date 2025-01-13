@@ -124,3 +124,13 @@ const friends = ['Ana', 'Marcos', 'Jose']
 
 for (let i of friends)
     console.log(i)
+
+// Adicionando break no while
+
+j = 1 // A variavel vem pra fora do case
+
+while (j <= 10) {
+    if (j === 8) break
+    console.log('Numero ', j)
+    j++ // O incremento vem pra cá
+}
