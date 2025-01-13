@@ -75,3 +75,16 @@ if (velMax >= 110){
 for (i = 1; i <= 10; i++){
     console.log('Numero ', i)
 }
+
+// While loop 
+
+j = 1 // A variavel vem pra fora do case
+
+while (j <= 10){
+    console.log('Numero ', j)
+    j++ // O incremento vem pra cá
+}
+
+// A vantagem dele é que posso utilizar variaveis setadas anteriormente no programa.
+
+// Do While
