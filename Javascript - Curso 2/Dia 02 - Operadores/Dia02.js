@@ -100,3 +100,14 @@ do {
     k++
 } while(k <= 10)
 
+
+// For In Loop
+
+const myCar = {
+    model: 'BMW',
+    year: 2005,
+    km: 68000
+}
+
+for (let i in myCar)
+    console.log(i, myCar[i])
