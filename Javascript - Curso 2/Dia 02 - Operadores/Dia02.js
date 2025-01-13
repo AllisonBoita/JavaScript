@@ -53,3 +53,17 @@ console.log(corVendida) // White
 
 // Precedencia de Operadores
 
+let num5 = (3+4) * 2
+console.log(num5)
+
+// Conditional Statements
+
+let velMax = 25
+
+if (velMax >= 110){
+    console.log('Velocidade acima da média')
+} else if (velMax >= 40 && velMax < 110) {
+    console.log('Velocidade Ok')
+} else {
+    console.log('Muito abaixo')
+}
