@@ -29,3 +29,16 @@ let driver = 90
 let speed = driver > 10 ? 'Above' : 'Below'
 
 console.log(speed)
+
+// Operadores Lógicos
+
+let idade = 2
+let tituloEleitor = true
+
+if (idade >= 18 && tituloEleitor){
+    console.log('Pode votar')
+} else if (idade >= 18 || tituloEleitor){
+    console.log('Ainda não consegue')
+} else{
+    console.log('nem tenta')
+}
