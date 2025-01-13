@@ -42,3 +42,14 @@ if (idade >= 18 && tituloEleitor){
 } else{
     console.log('nem tenta')
 }
+
+// Operadores Lógicos com strings
+
+let corCliente = 'white'
+let corEstoque = 'black'
+let corVendida = corCliente || corEstoque // Sempre considera primeiro o da esquerda
+
+console.log(corVendida) // White
+
+// Precedencia de Operadores
+
