@@ -39,7 +39,7 @@ console.log(book) */
 
 // Cria objetos
 
-function createBooks (name, author, pages){ // factory
+/* function createBooks (name, author, pages){ // factory
     const book = {
         name: name,
         author: author,
@@ -63,4 +63,19 @@ book1.color = 'White'
 // Adicionando propriedade a somente um dos objetos
 
 console.log(book1)
-console.log(book2)
+console.log(book2) */
+
+// Constructor
+
+// Construtor de objetos.
+
+// Quando utilizamos o constructor utilizamos a primeira letra maiuscula, seguindo o padrão Pascal Case
+
+function CreateBooks(name, author, pages) { // Constructor
+        this.name = name;
+        this.author = author;
+        this.pages = pages
+}
+
+const book1 = new CreateBooks('Cem anos de Solidão', 'Gabriel Garcia Marques', 508)
+console.log(book1)
