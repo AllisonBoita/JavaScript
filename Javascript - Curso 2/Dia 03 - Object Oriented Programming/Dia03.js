@@ -57,5 +57,10 @@ function createBooks (name, author, pages){ // factory
 
 const book1 = createBooks('Cem anos de Solidão', 'Gabriel Garcia Marques', 506)
 const book2 = createBooks('Chapeuzinho Vermelho', 'Gabriel Garcia Marques', 450)
+
+book1.color = 'White'
+
+// Adicionando propriedade a somente um dos objetos
+
 console.log(book1)
 console.log(book2)
