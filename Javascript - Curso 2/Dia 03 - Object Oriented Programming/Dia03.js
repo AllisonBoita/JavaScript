@@ -71,11 +71,23 @@ console.log(book2) */
 
 // Quando utilizamos o constructor utilizamos a primeira letra maiuscula, seguindo o padrão Pascal Case
 
-function CreateBooks(name, author, pages) { // Constructor
-        this.name = name;
-        this.author = author;
-        this.pages = pages
+function CreateBooks(name, author, pages) {
+  // Constructor
+  this.name = name
+  this.author = author
+  this.pages = pages
 }
 
-const book1 = new CreateBooks('Cem anos de Solidão', 'Gabriel Garcia Marques', 508)
+const book1 = new CreateBooks(
+  'Cem anos de Solidão',
+  'Gabriel Garcia Marques',
+  508
+)
 console.log(book1)
+
+document.getElementById('name').innerHTML = 'Allison'
+document.getElementById('like').innerHTML = 'Bet'
+
+function alterartexto() {
+  document.getElementById('texto-normal').innerHTML = 'Novo texto'
+}
