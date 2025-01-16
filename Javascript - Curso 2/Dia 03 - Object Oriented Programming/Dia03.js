@@ -99,6 +99,9 @@ function alterartexto() {
 /* let firstName =  'Allison'
 console.log(firstName)
  */
+
+
+
 // Built in Objects
 
 // Tenho um array de números e quero trazer o menor.
@@ -107,4 +110,6 @@ console.log(firstName)
 
 // Math
 
-console.log(Math.max(2,5,10,21,1,35))
+let numeros = [2,5,10,21,1,35]
+console.log(Math.max(...numeros)) // usando o spread
+// Isso acontece porque o método Math.max() não aceita um array diretamente como argumento. Ele espera uma lista de números individuais.
