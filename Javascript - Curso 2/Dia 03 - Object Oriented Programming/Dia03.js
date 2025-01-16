@@ -122,3 +122,17 @@ console.log(message.startsWith('Hey')) // verifica se minha mensagem inicia ou n
 console.log(message.length) // verifica o tamanho da mensagem
 console.log(message.includes('is')) // Valida se existe na mensagem.
 console.log(message.endsWith('Andre'))
+
+// Template literals
+
+let firstName = 'Allison'
+
+// forma errada
+const email = 'Hi, ' + firstName + '. \nThe meeting is confirmed! \nAndre'
+console.log(email)
+
+// template literals
+const email2 = `Hi, ${firstName}, 
+The meeting is confirmed! 
+Andre`
+console.log(email2)
