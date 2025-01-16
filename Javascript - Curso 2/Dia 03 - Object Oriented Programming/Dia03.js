@@ -71,7 +71,7 @@ console.log(book2) */
 
 // Quando utilizamos o constructor utilizamos a primeira letra maiuscula, seguindo o padrão Pascal Case
 
-function CreateBooks(name, author, pages) {
+/* function CreateBooks(name, author, pages) {
   // Constructor
   this.name = name
   this.author = author
@@ -90,4 +90,21 @@ document.getElementById('like').innerHTML = 'Bet'
 
 function alterartexto() {
   document.getElementById('texto-normal').innerHTML = 'Novo texto'
-}
+} */
+
+// Garbage collector
+
+// Feature do JS onde não é necessário configurar a reserva de memória para uma variável.
+
+/* let firstName =  'Allison'
+console.log(firstName)
+ */
+// Built in Objects
+
+// Tenho um array de números e quero trazer o menor.
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+
+// Math
+
+console.log(Math.max(2,5,10,21,1,35))
