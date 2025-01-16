@@ -113,3 +113,12 @@ console.log(firstName)
 let numeros = [2,5,10,21,1,35]
 console.log(Math.max(...numeros)) // usando o spread
 // Isso acontece porque o método Math.max() não aceita um array diretamente como argumento. Ele espera uma lista de números individuais.
+
+
+// O built in string
+
+let message = 'Hey, my name is Andre'
+console.log(message.startsWith('Hey')) // verifica se minha mensagem inicia ou não com tal valor.
+console.log(message.length) // verifica o tamanho da mensagem
+console.log(message.includes('is')) // Valida se existe na mensagem.
+console.log(message.endsWith('Andre'))
