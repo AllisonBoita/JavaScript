@@ -25,3 +25,7 @@ console.log(movies.find(function (movies){
 })) // retorna o filme se for igual ao que esotu passando.
 
 // Se for uma array de referência devemos utilizar o find
+
+// Alterando a array acima por uma arrow function
+
+console.log(movies.find(movies => movies.movieName == 'The Matrix')) // retorna o filme se for igual ao que esotu passando.
