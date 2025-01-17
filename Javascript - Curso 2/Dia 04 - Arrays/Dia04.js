@@ -29,3 +29,18 @@ console.log(movies.find(function (movies){
 // Alterando a array acima por uma arrow function
 
 console.log(movies.find(movies => movies.movieName == 'The Matrix')) // retorna o filme se for igual ao que esotu passando.
+
+// removendo itens dum array
+
+const num1 = [5,6,7,8]
+// const num2 = num1.pop() // remove o ultimo numero da array
+// const num3 = num1.shift() // remove o primeiro numero da array
+const num4 = num1.splice(2,1) // a partir do index X remova tantos itens
+
+
+console.log(num1)
+// console.log(num2)
+// console.log(num3)
+console.log(num4)
+
+
