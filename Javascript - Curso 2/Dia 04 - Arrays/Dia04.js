@@ -32,7 +32,7 @@ console.log(movies.find(movies => movies.movieName == 'The Matrix')) // retorna 
 
 // removendo itens dum array
 
-const num1 = [5,6,7,8]
+let num1 = [5,6,7,8]
 // const num2 = num1.pop() // remove o ultimo numero da array
 // const num3 = num1.shift() // remove o primeiro numero da array
 const num4 = num1.splice(2,1) // a partir do index X remova tantos itens
@@ -42,5 +42,12 @@ console.log(num1)
 // console.log(num2)
 // console.log(num3)
 console.log(num4)
+
+// Esvaziando um array
+
+num1 = []
+num1.length = 0
+num1.splice(0, num1.length) // remova do index 0 até o tamanho total da array
+console.log(num1)
 
 
