@@ -10,3 +10,9 @@ console.log(all)
 console.log(half)
 
 // Utilizando o Join Array
+
+let clientes = ['Allison', 'José', 'Maria']
+console.log(clientes)
+
+let clientesJoin = clientes.join(', ') // Serve para adicionar qualquer coisa à uma array ou converter para string
+console.log(clientesJoin)
