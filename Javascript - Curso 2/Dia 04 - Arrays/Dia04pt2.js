@@ -26,8 +26,15 @@ console.log(clientes)
 
 const tempChapeco = [18, 13, 8, 2]
 
-const tempPositive = tempChapeco.every(function(value){
+const tempPositive = tempChapeco.every(function(value){ // se trocar every por filter ele filtra somente baseado
+    // na condição
     return value >= 0
 }) // chega todos os valores dentro da array
+
+// convertendo pra arrow function
+
+/* const tempPositive = tempChapeco.every(value => value >= 0)// se trocar every por filter ele filtra somente baseado
+// na condição // chega todos os valores dentro da array
+ */
 
 console.log(tempPositive)
