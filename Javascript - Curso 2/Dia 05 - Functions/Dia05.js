@@ -25,3 +25,21 @@ function somaValores(){
 }
 
 console.log(somaValores(10,20,30,40))
+
+// Configurando parametros default
+
+
+// exemplo 
+
+/* function calculaFinanciamento(loan, rate, years){
+    return (loan * rate / 100 * years) + loan
+}
+
+console.log(calculaFinanciamento(20000, 2.5, 5)) */
+
+// correto
+function calculaFinanciamento(loan, rate = 2.5, years=5) {
+    return (loan * rate / 100 * years) + loan
+}
+
+console.log(calculaFinanciamento(20000))
