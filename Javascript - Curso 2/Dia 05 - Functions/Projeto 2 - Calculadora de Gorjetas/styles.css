@@ -33,14 +33,14 @@ html {
     padding: 1.6rem 0;
   }
   
-  .bill {
+  .conta {
     display: flex;
   }
-  .bill label {
+  .conta label {
     flex: 1;
     align-self: center;
   }
-  .bill input {
+  .conta input {
     flex: 3;
   }
   

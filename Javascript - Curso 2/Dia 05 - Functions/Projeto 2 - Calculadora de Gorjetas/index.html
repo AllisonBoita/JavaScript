@@ -9,30 +9,30 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Quick Tip</title>
+    <title>ContaCerta</title>
   </head>
   <body>
     <main oninput="update()"> <!--Aplicando em todos que estão no main-->
-      <h1>Quick Tip</h1>
+      <h1>ContaCerta</h1>
       <section>
-        <div class="bill">
-          <label for="yourBill">Bill</label>
+        <div class="conta">
+          <label for="suaConta">Conta</label>
           <input 
             type="number" 
-            placeholder="Your bill" 
-            id="yourBill"
+            placeholder="Sua Conta" 
+            id="suaConta"
             oninput="update()"/> <!--Adicionando para validar alterações no campo-->
         </div>
         <div>
           <div class="space-between">
-            <label for="">Select tip</label
-            ><span id="tipPercent"></span>
+            <label for="">Selecione a Gorjeta</label
+            ><span id="percentualGorjeta"></span>
           </div>
           <input type="range" value="0" id="tipInput" class="range" />
         </div>
         <div class="space-between">
           <span>Tip</span>
-          <span id="tipValue"></span>
+          <span id="valorGorjeta"></span>
         </div>
         <hr />
         <div class="space-between total">

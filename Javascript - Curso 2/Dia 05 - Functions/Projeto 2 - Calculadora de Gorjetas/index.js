@@ -10,16 +10,16 @@ function formatPerson(value){
 }
 
 function update(){
-    let bill = Number(document.getElementById('yourBill').value)
-    let tipPercent = document.getElementById('tipInput').value
+    let conta = Number(document.getElementById('suaConta').value)
+    let percentualGorjeta = document.getElementById('tipInput').value
     let split = document.getElementById('splitInput').value
 
-    let tipValue = bill * (tipPercent / 100)
-    let billTotal = bill + tipValue
+    let valorGorjeta = conta * (percentualGorjeta / 100)
+    let billTotal = conta + valorGorjeta
     let billEach = billTotal / split
     
-    document.getElementById('tipPercent').innerHTML = tipPercent + ' %'
-    document.getElementById('tipValue').innerHTML = ajusteValor(tipValue)
+    document.getElementById('percentualGorjeta').innerHTML = percentualGorjeta + ' %'
+    document.getElementById('valorGorjeta').innerHTML = ajusteValor(valorGorjeta)
     document.getElementById('totalWithTip').innerHTML = ajusteValor(billTotal)
     document.getElementById('splitValue').innerHTML = formatPerson(split)
     document.getElementById('billEach').innerHTML = ajusteValor(billEach)
