@@ -1,6 +1,12 @@
 function ajusteValor(value){
+    value = Math.ceil(value * 100) / 100 // para ajustar último digito em casos de números
     value = value.toFixed(2)
     return '$ ' + value
+}
+
+function formatPerson(value){
+    if (value == 1) return value + ' person'
+    return value + ' peoples'
 }
 
 function update(){
@@ -15,6 +21,6 @@ function update(){
     document.getElementById('tipPercent').innerHTML = tipPercent + ' %'
     document.getElementById('tipValue').innerHTML = ajusteValor(tipValue)
     document.getElementById('totalWithTip').innerHTML = ajusteValor(billTotal)
-    document.getElementById('splitValue').innerHTML = split
+    document.getElementById('splitValue').innerHTML = formatPerson(split)
     document.getElementById('billEach').innerHTML = ajusteValor(billEach)
 }
