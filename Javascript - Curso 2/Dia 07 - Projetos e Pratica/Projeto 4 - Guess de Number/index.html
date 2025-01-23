@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Guess the number</title>
   </head>
-  <body>
+  <body onload="init()">
     <main>
       <div id="welcomeScreen">
         <h2>Guess the Number <br />1 - 100</h2>
@@ -16,7 +16,8 @@
       <div id="gameArea">
         <section>
           <h3 id="textOutput">Your Guess:</h3>
-          <input type="number" id="inputBox" min="1" max="100"/>
+          <input type="number" id="inputBox" min="1" max="100" onchange="registerNumbers()"/> <!--Toda vez que eu inserir um number ele chama minha função, associando ao campo onde
+          os números devem ser gravados-->
         </section>
         <section class="stats">
           <div class="info">
