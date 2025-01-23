@@ -14,8 +14,7 @@ const btn = document.getElementById('btn')
 
 btn.addEventListener('click', function () {
     const randomColor = getRandomColor()
-    const corAleatoria = cores[randomColor]
-    document.body.style.background = corAleatoria
+    document.body.style.background = cores[randomColor]
     // console.log(randomColor)
 })
 
