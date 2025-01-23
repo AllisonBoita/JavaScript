@@ -2,7 +2,7 @@ const defaultUserNumbers = [
   2, 4, 5, 7, 9, 10, 11, 13, 14, 15, 16, 20, 22, 24, 25,
 ]
 
-window.onload = function () {
+function init () {
   document.getElementById('user-numbers').value = defaultUserNumbers
 }
 
