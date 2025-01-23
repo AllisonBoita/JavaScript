@@ -1,5 +1,7 @@
 const cores = ['Red', 'Blue', 'Yellow', 'Purple', 'Gray', 'Green']
 const btn = document.getElementById('btn')
+const color = document.querySelector('.color') // Retorna o primeiro elemento de um documento. 
+
 
 // Escutar um clique no botão do index.html
 
@@ -16,6 +18,7 @@ btn.addEventListener('click', function () {
     const randomColor = getRandomColor()
     document.body.style.background = cores[randomColor]
     // console.log(randomColor)
+    color.textContent = cores[randomColor] // pegar o conteúdo do texto e associar.
 })
 
 function getRandomColor (){
