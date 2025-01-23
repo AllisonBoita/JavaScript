@@ -13,7 +13,7 @@ function registerNumbers(){
     userNumbers.push(' ' + userNumber) // pegue os números e adicione à array userNumbers
     document.getElementById('guesses').innerHTML = userNumbers
 
-    if (userNumbers.length <= maxGuesses){
+    if (userNumbers.length < maxGuesses){
 
         if (userNumber > computerNumber) {
             document.getElementById('textOutput').innerHTML = 'Seu numero é maior que o número escolhido pelo computador'
@@ -32,10 +32,13 @@ function registerNumbers(){
             //attempts++
             //document.getElementById('attempts').innerHTML = attempts
             document.getElementById('attempts').innerHTML = userNumbers.length
+            document.getElementById('inputBox').disabled = true
         }
     } else {
-        document.getElementById('textOutput').innerHTML = 'Você Perdeu!' + 'O número do computador era ' + computerNumber
-        return;
+        document.getElementById('textOutput').innerHTML = 'Você Perdeu!' + ' O número do computador era ' + computerNumber
+        document.getElementById('inputBox').value = ''
+        document.getElementById('inputBox').disabled = true
+        document.getElementById('attempts').innerHTML = userNumbers.length
     }
 
     
