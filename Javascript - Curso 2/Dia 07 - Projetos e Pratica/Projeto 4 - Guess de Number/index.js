@@ -1,7 +1,12 @@
 let computerNumber
 let userNumbers = []
-//let attempts = 0
-let maxGuesses = 5
+let attempts = 0
+let maxGuesses = 4
+const maxComputerNumber = 100
+
+function newGame(){
+    window.location.reload()
+}
 
 function init(){
     computerNumber = Math.floor(Math.random() * 100 + 1)   // Gera um numero randomico e arredonda por causa do floor.
@@ -10,38 +15,47 @@ function init(){
 
 function registerNumbers(){
     const userNumber = Number(document.getElementById('inputBox').value)
-    userNumbers.push(' ' + userNumber) // pegue os números e adicione à array userNumbers
-    document.getElementById('guesses').innerHTML = userNumbers
 
-    if (userNumbers.length < maxGuesses){
+    if (userNumber <= maxComputerNumber){
+        userNumbers.push(' ' + userNumber) // pegue os números e adicione à array userNumbers
+        document.getElementById('guesses').innerHTML = userNumbers
+    } else {
 
-        if (userNumber > computerNumber) {
+    }
+
+    if (attempts < maxGuesses){
+
+        if (userNumber > computerNumber && userNumber < maxComputerNumber) {
             document.getElementById('textOutput').innerHTML = 'Seu numero é maior que o número escolhido pelo computador'
             document.getElementById('inputBox').value = ''
-            //attempts++
-            //document.getElementById('attempts').innerHTML = attempts
-            document.getElementById('attempts').innerHTML = userNumbers.length
+            attempts++
+            document.getElementById('attempts').innerHTML = attempts
+            //document.getElementById('attempts').innerHTML = userNumbers.length
         } else if (userNumber < computerNumber){
             document.getElementById('textOutput').innerHTML = 'Seu numero é menor que o número escolhido pelo computador'
             document.getElementById('inputBox').value = ''
-            //attempts++
-            //document.getElementById('attempts').innerHTML = attempts
-            document.getElementById('attempts').innerHTML = userNumbers.length
+            attempts++
+            document.getElementById('attempts').innerHTML = attempts
+            //document.getElementById('attempts').innerHTML = userNumbers.length
+        } else if (userNumber > maxComputerNumber){
+            document.getElementById('textOutput').innerHTML = 'Número é inválido! Dígite um número menor ou igual à 100'
+            document.getElementById('inputBox').value = ''
         } else {
             document.getElementById('textOutput').innerHTML = 'Você acertou!'
-            //attempts++
-            //document.getElementById('attempts').innerHTML = attempts
-            document.getElementById('attempts').innerHTML = userNumbers.length
+            attempts++
+            document.getElementById('attempts').innerHTML = attempts
+            //document.getElementById('attempts').innerHTML = userNumbers.length
             document.getElementById('inputBox').disabled = true
         }
     } else {
         document.getElementById('textOutput').innerHTML = 'Você Perdeu!' + ' O número do computador era ' + computerNumber
         document.getElementById('inputBox').value = ''
         document.getElementById('inputBox').disabled = true
-        document.getElementById('attempts').innerHTML = userNumbers.length
+        attempts++
+        document.getElementById('attempts').innerHTML = attempts
+        //document.getElementById('attempts').innerHTML = userNumbers.length
     }
 
-    
 }
 
 // Na aula foi repassada a forma de incrementar a tentativa de attempts em todos os ifs, porém notei que da forma feita em código o resultado é o mesmo.
